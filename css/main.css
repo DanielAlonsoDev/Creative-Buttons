@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;600;900&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+.collection {
+  padding: 5em 0 5em 0; }
+
+.row {
+  padding: 3em 0; }
+
+.collection-1 {
+  background-color: #344CB7; }
+  .collection-1 .titulo, .collection-1 p {
+    color: #EBE645; }
+  .collection-1 .boton-tipo1 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #EBE645;
+    border: 2px solid #EBE645;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-1 .boton-tipo1:hover {
+      color: #344CB7; }
+    .collection-1 .boton-tipo1:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #EBE645;
+      transition: all ease 300ms;
+      z-index: -2;
+      width: 103%;
+      height: 0%; }
+    .collection-1 .boton-tipo1:hover:after {
+      height: 103%;
+      z-index: -2; }
+  .collection-1 .boton-tipo2 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #EBE645;
+    border: 2px solid #EBE645;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-1 .boton-tipo2:hover {
+      color: #344CB7; }
+    .collection-1 .boton-tipo2:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #EBE645;
+      transition: all ease 300ms;
+      z-index: -2;
+      width: 0%;
+      height: 103%; }
+    .collection-1 .boton-tipo2:hover:after {
+      width: 103%;
+      z-index: -2; }
+  .collection-1 .boton-tipo3 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #EBE645;
+    border: 2px solid #EBE645;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-1 .boton-tipo3:hover {
+      color: #344CB7; }
+    .collection-1 .boton-tipo3:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #EBE645;
+      transition: all ease 300ms;
+      z-index: -2;
+      transform: translate(-50%, -50%) rotateZ(45deg);
+      width: 120%;
+      height: 0%; }
+    .collection-1 .boton-tipo3:hover:after {
+      height: 275%;
+      z-index: -2; }
+  .collection-1 .boton-tipo4 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #EBE645;
+    border: 2px solid #EBE645;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-1 .boton-tipo4:hover {
+      color: #344CB7; }
+    .collection-1 .boton-tipo4:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #EBE645;
+      transition: all ease 300ms;
+      z-index: -2;
+      transform: translate(-50%, -50%) rotateZ(-45deg);
+      width: 120%;
+      height: 0%; }
+    .collection-1 .boton-tipo4:hover:after {
+      height: 275%;
+      z-index: -2; }
+  .collection-1 .boton-tipo5 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #344CB7;
+    border: 2px solid #EBE645;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-1 .boton-tipo5:hover {
+      color: #EBE645; }
+    .collection-1 .boton-tipo5:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #EBE645;
+      transition: all ease 300ms;
+      z-index: -2;
+      width: 103%;
+      height: 100%; }
+    .collection-1 .boton-tipo5:hover:after {
+      height: 0%;
+      z-index: -2; }
+  .collection-1 .boton-tipo6 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #344CB7;
+    border: 2px solid #EBE645;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-1 .boton-tipo6:hover {
+      color: #EBE645; }
+    .collection-1 .boton-tipo6:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #EBE645;
+      transition: all ease 300ms;
+      z-index: -2;
+      width: 103%;
+      height: 103%; }
+    .collection-1 .boton-tipo6:hover:after {
+      width: 0%;
+      z-index: -2; }
+  .collection-1 .boton-tipo7 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #344CB7;
+    border: 2px solid #EBE645;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-1 .boton-tipo7:hover {
+      color: #EBE645; }
+    .collection-1 .boton-tipo7:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #EBE645;
+      transition: all ease 300ms;
+      z-index: -2;
+      transform: translate(-50%, -50%) rotateZ(45deg);
+      width: 120%;
+      height: 275%; }
+    .collection-1 .boton-tipo7:hover:after {
+      height: 0%;
+      z-index: -2; }
+  .collection-1 .boton-tipo8 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #344CB7;
+    border: 2px solid #EBE645;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-1 .boton-tipo8:hover {
+      color: #EBE645; }
+    .collection-1 .boton-tipo8:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #EBE645;
+      transition: all ease 300ms;
+      z-index: -2;
+      transform: translate(-50%, -50%) rotateZ(-45deg);
+      width: 120%;
+      height: 275%; }
+    .collection-1 .boton-tipo8:hover:after {
+      height: 0%;
+      z-index: -2; }
+
+.collection-2 {
+  background-color: #FFAB4C; }
+  .collection-2 .titulo, .collection-2 p {
+    color: #142F43; }
+  .collection-2 .boton-tipo9 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #142F43;
+    border: 2px solid #142F43;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-2 .boton-tipo9:hover {
+      color: #FFAB4C; }
+    .collection-2 .boton-tipo9:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      background-color: #142F43;
+      transition: all ease 300ms;
+      z-index: -2;
+      border-radius: 50%;
+      width: 0;
+      height: 0;
+      top: 50%;
+      left: 0; }
+    .collection-2 .boton-tipo9:hover:after {
+      height: 500%;
+      width: 250%;
+      z-index: -2; }
+  .collection-2 .boton-tipo10 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #142F43;
+    border: 2px solid #142F43;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-2 .boton-tipo10:hover {
+      color: #FFAB4C; }
+    .collection-2 .boton-tipo10:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      background-color: #142F43;
+      transition: all ease 300ms;
+      z-index: -2;
+      border-radius: 50%;
+      width: 0;
+      height: 0;
+      top: 50%;
+      left: 100%; }
+    .collection-2 .boton-tipo10:hover:after {
+      height: 500%;
+      width: 250%;
+      z-index: -2; }
+  .collection-2 .boton-tipo11 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #142F43;
+    border: 2px solid #142F43;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-2 .boton-tipo11:hover {
+      color: #FFAB4C; }
+    .collection-2 .boton-tipo11:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #142F43;
+      transition: all ease 300ms;
+      z-index: -2;
+      transform: translate(-50%, -50%) rotateZ(45deg);
+      width: 120%;
+      height: 0%; }
+    .collection-2 .boton-tipo11:hover:after {
+      height: 275%;
+      z-index: -2; }
+  .collection-2 .boton-tipo12 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #142F43;
+    border: 2px solid #142F43;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-2 .boton-tipo12:hover {
+      color: #FFAB4C; }
+    .collection-2 .boton-tipo12:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #142F43;
+      transition: all ease 300ms;
+      z-index: -2;
+      transform: translate(-50%, -50%) rotateZ(-45deg);
+      width: 120%;
+      height: 0%; }
+    .collection-2 .boton-tipo12:hover:after {
+      height: 275%;
+      z-index: -2; }
+  .collection-2 .boton-tipo13 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #FFAB4C;
+    border: 2px solid #142F43;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-2 .boton-tipo13:hover {
+      color: #142F43; }
+    .collection-2 .boton-tipo13:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #142F43;
+      transition: all ease 300ms;
+      z-index: -2;
+      width: 103%;
+      height: 100%; }
+    .collection-2 .boton-tipo13:hover:after {
+      height: 0%;
+      z-index: -2; }
+  .collection-2 .boton-tipo14 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #FFAB4C;
+    border: 2px solid #142F43;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-2 .boton-tipo14:hover {
+      color: #142F43; }
+    .collection-2 .boton-tipo14:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #142F43;
+      transition: all ease 300ms;
+      z-index: -2;
+      width: 103%;
+      height: 103%; }
+    .collection-2 .boton-tipo14:hover:after {
+      width: 0%;
+      z-index: -2; }
+  .collection-2 .boton-tipo15 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #FFAB4C;
+    border: 2px solid #142F43;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-2 .boton-tipo15:hover {
+      color: #142F43; }
+    .collection-2 .boton-tipo15:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #142F43;
+      transition: all ease 300ms;
+      z-index: -2;
+      transform: translate(-50%, -50%) rotateZ(45deg);
+      width: 120%;
+      height: 275%; }
+    .collection-2 .boton-tipo15:hover:after {
+      height: 0%;
+      z-index: -2; }
+  .collection-2 .boton-tipo16 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #FFAB4C;
+    border: 2px solid #142F43;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden; }
+    .collection-2 .boton-tipo16:hover {
+      color: #142F43; }
+    .collection-2 .boton-tipo16:after {
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background-color: #142F43;
+      transition: all ease 300ms;
+      z-index: -2;
+      transform: translate(-50%, -50%) rotateZ(-45deg);
+      width: 120%;
+      height: 275%; }
+    .collection-2 .boton-tipo16:hover:after {
+      height: 0%;
+      z-index: -2; }

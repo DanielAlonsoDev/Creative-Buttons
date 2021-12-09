@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;600;900&display=swap');
+
+$font-name: 'Outfit', sans-serif;
+$font-thin: 100;
+$font-semi: 600;
+$font-bold: 900;
+
+@mixin curtainBtn($medida, $colorPri, $colorSec, $variante) {
+    font-size: ($medida * 2 + px);
+    font-family: $font-name;
+    font-weight: $font-semi;
+    padding: ($medida + px) ($medida * 3 + px);
+    color: $colorPri;
+    border: ($medida * 0.25 + px) solid $colorPri;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden;
+
+    &:hover {
+        color: $colorSec;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        background-color: $colorPri;
+        transition: all ease 300ms;
+        z-index: -2;
+
+        @if $variante == 1 {
+            width: 103%;
+            height: 0%;
+
+        } @else if $variante == 2 {
+            width: 0%;
+            height: 103%;
+
+        } @else if $variante == 3 {
+            transform: translate(-50%,-50%) rotateZ(45deg);
+            width: 120%;
+            height: 0%;
+        } @else if $variante == 4 {
+            transform: translate(-50%,-50%) rotateZ(-45deg);
+            width: 120%;
+            height: 0%;
+        }
+    }
+
+    &:hover:after {
+        @if $variante == 1 {
+            height: 103%;
+            z-index: -2;
+
+        } @else if $variante == 2 {
+            width: 103%;
+            z-index: -2;
+
+        } @else if $variante == 3 {
+            height: 275%;
+            z-index: -2;
+
+        } @else if $variante == 4 {
+            height: 275%;
+            z-index: -2;
+        }
+    }
+
+}
+
+@mixin inverCurtainBtn($medida, $colorPri, $colorSec, $variante) {
+    font-size: ($medida * 2 + px);
+    font-family: $font-name;
+    font-weight: $font-semi;
+    padding: ($medida + px) ($medida * 3 + px);
+    color: $colorSec;
+    border: ($medida * 0.25 + px) solid $colorPri;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden;
+
+    &:hover {
+        color: $colorPri;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        background-color: $colorPri;
+        transition: all ease 300ms;
+        z-index: -2;
+
+        @if $variante == 1 {
+            width: 103%;
+            height: 100%;
+
+        } @else if $variante == 2 {
+            width: 103%;
+            height: 103%;
+
+        } @else if $variante == 3 {
+            transform: translate(-50%,-50%) rotateZ(45deg);
+            width: 120%;
+            height: 275%;
+        } @else if $variante == 4 {
+            transform: translate(-50%,-50%) rotateZ(-45deg);
+            width: 120%;
+            height: 275%;
+        }
+    }
+
+    &:hover:after {
+        @if $variante == 1 {
+            height: 0%;
+            z-index: -2;
+
+        } @else if $variante == 2 {
+            width: 0%;
+            z-index: -2;
+
+        } @else if $variante == 3 {
+            height: 0%;
+            z-index: -2;
+
+        } @else if $variante == 4 {
+            height: 0%;
+            z-index: -2;
+        }
+    }
+
+}
+
+@mixin circleBtn($medida, $colorPri, $colorSec, $variante) {
+    font-size: ($medida * 2 + px);
+    font-family: $font-name;
+    font-weight: $font-semi;
+    padding: ($medida + px) ($medida * 3 + px);
+    color: $colorPri;
+    border: ($medida * 0.25 + px) solid $colorPri;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+    transition: all ease 200ms;
+    overflow: hidden;
+
+    &:hover {
+        color: $colorSec;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        background-color: $colorPri;
+        transition: all ease 300ms;
+        z-index: -2;
+        border-radius: 50%;
+
+        @if $variante == 1 {
+            width: 0;
+            height: 0;
+            top: 50%;
+            left: 0;
+
+        } @else if $variante == 2 {
+            width: 0;
+            height: 0;
+            top: 50%;
+            left: 100%;
+
+        } @else if $variante == 3 {
+            transform: translate(-50%,-50%);
+            width: 120%;
+            height: 0%;
+        } @else if $variante == 4 {
+            transform: translate(-50%,-50%);
+            width: 120%;
+            height: 0%;
+        }
+    }
+
+    &:hover:after {
+        @if $variante == 1 {
+            height: 500%;
+            width: 250%;
+            z-index: -2;
+
+        } @else if $variante == 2 {
+            height: 500%;
+            width: 250%;
+            z-index: -2;
+
+        } @else if $variante == 3 {
+            height: 275%;
+            z-index: -2;
+
+        } @else if $variante == 4 {
+            height: 275%;
+            z-index: -2;
+        }
+    }
+
+}
