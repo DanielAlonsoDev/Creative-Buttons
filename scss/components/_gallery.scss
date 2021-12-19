@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+$gallery-colors: #009DAE, #EAEAEA, #D4ECDD, #345B63;
+
 .collection {
     padding: 5em 0 5em 0;
 }
@@ -12,34 +14,30 @@
 }
 
 .collection-1 {
-    background-color: #344CB7;
+    background-color: nth($gallery-colors, 1);
 
     .titulo, p {
-        color: #EBE645;
+        color: nth($gallery-colors, 2);
     }
-    .boton-tipo1 { @include curtainBtn(8,#EBE645 ,#344CB7,1); }
-    .boton-tipo2 { @include curtainBtn(8,#EBE645 ,#344CB7,2); }
-    .boton-tipo3 { @include curtainBtn(8,#EBE645 ,#344CB7,3); }
-    .boton-tipo4 { @include curtainBtn(8,#EBE645 ,#344CB7,4); }
-    .boton-tipo5 { @include inverCurtainBtn(8,#EBE645,#344CB7, 1); }
-    .boton-tipo6 { @include inverCurtainBtn(8,#EBE645,#344CB7, 2); }
-    .boton-tipo7 { @include inverCurtainBtn(8,#EBE645,#344CB7, 3); }
-    .boton-tipo8 { @include inverCurtainBtn(8,#EBE645,#344CB7, 4); }
+    .boton-tipo1 { @include curtainBtn(8, nth($gallery-colors, 2), nth($gallery-colors,1) ,1); }
+    .boton-tipo2 { @include curtainBtn(8, nth($gallery-colors, 2),nth($gallery-colors, 1),2); }
+    .boton-tipo3 { @include curtainBtn(8, nth($gallery-colors, 2), nth($gallery-colors,1) ,3); }
+    .boton-tipo4 { @include curtainBtn(8, nth($gallery-colors, 2), nth($gallery-colors,1) ,4); }
+    .boton-tipo5 { @include invertedCurtainBtn(8, nth($gallery-colors, 2), nth($gallery-colors,1) ,1); }
+    .boton-tipo6 { @include invertedCurtainBtn(8, nth($gallery-colors, 2), nth($gallery-colors,1) ,2); }
+    .boton-tipo7 { @include invertedCurtainBtn(8, nth($gallery-colors, 2), nth($gallery-colors,1) ,3); }
+    .boton-tipo8 { @include invertedCurtainBtn(8, nth($gallery-colors, 2), nth($gallery-colors,1) ,4); }
 }
 
 .collection-2 {
-    background-color: #FFAB4C;
+    background-color: nth($gallery-colors,3);
 
     .titulo, p {
-        color: #142F43;
+        color: nth($gallery-colors,4);
     }
-    .boton-tipo9 { @include circleBtn(8,#142F43 ,#FFAB4C,1); }
-    .boton-tipo10 { @include circleBtn(8,#142F43 ,#FFAB4C,2); }
-    .boton-tipo11 { @include curtainBtn(8,#142F43 ,#FFAB4C,3); }
-    .boton-tipo12 { @include curtainBtn(8,#142F43 ,#FFAB4C,4); }
-    .boton-tipo13 { @include inverCurtainBtn(8,#142F43 ,#FFAB4C,1); }
-    .boton-tipo14 { @include inverCurtainBtn(8,#142F43 ,#FFAB4C,2); }
-    .boton-tipo15 { @include inverCurtainBtn(8,#142F43 ,#FFAB4C,3); }
-    .boton-tipo16 { @include inverCurtainBtn(8,#142F43 ,#FFAB4C,4); }
+    .boton-tipo9 { @include circleBtn(8,nth($gallery-colors, 4), nth($gallery-colors,3),1); }
+    .boton-tipo10 { @include circleBtn(8,nth($gallery-colors, 4), nth($gallery-colors,3),2); }
+    .boton-tipo11 { @include circleBtn(8,nth($gallery-colors, 4), nth($gallery-colors,3),3); }
+    .boton-tipo12 { @include invertedCircleBtn(8,nth($gallery-colors, 4), nth($gallery-colors,3)); }
 }
 
